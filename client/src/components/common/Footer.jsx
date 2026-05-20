@@ -10,8 +10,8 @@ export default function Footer() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2.5rem' }}>
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4" style={{ overflow: 'hidden', padding: '10px 0', width: '180px' }}>
-              <img src={logo} alt="MotoExpress Logo" style={{ height: '35px', width: 'auto', transform: 'scale(4)', transformOrigin: 'left center', mixBlendMode: 'screen' }} />
+            <div className="flex items-center gap-2 mb-4">
+              <img src={logo} alt="MotoExpress Logo" style={{ height: '44px', width: 'auto' }} />
             </div>
             <p style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>The ultimate destination for premium bike enthusiasts. Buy, sell, and service elite machines with India's most trusted automotive platform.</p>
             <div className="flex items-center gap-3 mt-4">

@@ -89,8 +89,8 @@ export default function Navbar() {
     <nav style={{ background: '#111111', borderBottom: '1px solid #1e1e1e' }} className="sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 gap-1 sm:gap-4 lg:gap-8">
-          <Link to="/" className="flex items-center flex-shrink-0" style={{ height: '100%', display: 'flex', alignItems: 'center', overflow: 'hidden', width: '150px', marginLeft: '-5px' }}>
-            <img src={logo} alt="MotoExpress Logo" style={{ height: '32px', width: 'auto', transform: 'scale(4.5)', transformOrigin: 'left center', mixBlendMode: 'screen' }} />
+          <Link to="/" className="flex items-center flex-shrink-0" style={{ marginLeft: '-2px' }}>
+            <img src={logo} alt="MotoExpress Logo" style={{ height: '46px', width: 'auto' }} />
           </Link>
 
           {/* Desktop Nav */}

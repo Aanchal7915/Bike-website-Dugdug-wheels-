@@ -43,7 +43,7 @@ export default function Login() {
         {/* Logo */}
         <div style={{ textAlign: 'center', marginBottom: '0.8rem' }}>
           <Link to="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: '#111', width: '80px', height: '80px', borderRadius: '50%', margin: '0 auto 1rem', overflow: 'hidden', border: '3px solid #E53935', boxShadow: '0 4px 15px rgba(229,57,53,0.2)' }}>
-            <img src={logo} alt="MotoExpress Logo" style={{ height: '22px', width: 'auto', transform: 'scale(4.5)', transformOrigin: 'center', mixBlendMode: 'screen' }} />
+            <img src={logo} alt="MotoExpress Logo" style={{ width: '66px', height: 'auto' }} />
           </Link>
           <h1 style={{ color: '#111', fontSize: '1.4rem', fontWeight: 900, marginTop: '0.2rem', fontFamily: 'Rajdhani, sans-serif' }}>Welcome Back</h1>
           <p style={{ color: '#666', marginTop: '0.1rem', fontSize: '0.82rem' }}>Login to your account</p>
