@@ -1,7 +1,13 @@
 import axios from 'axios';
 
+let baseURL = import.meta.env.VITE_API_URL || '';
+// Ensure baseURL ends with /api to match the backend route setup
+if (baseURL && !baseURL.endsWith('/api') && !baseURL.endsWith('/api/')) {
+  baseURL = baseURL.replace(/\/+$/, '') + '/api';
+}
+
 const API = axios.create({
-  baseURL: `${import.meta.env.VITE_API_URL}`,
+  baseURL: baseURL,
   timeout: 15000,
 });
 
