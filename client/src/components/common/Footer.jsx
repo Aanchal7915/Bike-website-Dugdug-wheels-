@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
-import logo from '../../assets/logo.png';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="MotoExpress Logo" style={{ height: '44px', width: 'auto' }} />
+              <Logo height={44} />
             </div>
             <p style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>The ultimate destination for premium bike enthusiasts. Buy, sell, and service elite machines with India's most trusted automotive platform.</p>
             <div className="flex items-center gap-3 mt-4">
@@ -108,7 +108,7 @@ export default function Footer() {
         </div>
 
         <div style={{ borderTop: '1px solid #1A1A1A', marginTop: '2.5rem', paddingTop: '1.5rem', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
-          <p style={{ fontSize: '0.83rem' }}>© {new Date().getFullYear()} MotoExpress. All rights reserved.</p>
+          <p style={{ fontSize: '0.83rem' }}>© {new Date().getFullYear()} Dugdug Wheels. All rights reserved.</p>
           <div className="flex items-center gap-4" style={{ fontSize: '0.83rem' }}>
             <Link to="/privacy" style={{ color: '#888', textDecoration: 'none' }}>Privacy Policy</Link>
             <Link to="/terms" style={{ color: '#888', textDecoration: 'none' }}>Terms of Service</Link>

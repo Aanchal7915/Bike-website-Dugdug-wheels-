@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useAuth } from '../context/AuthContext';
@@ -50,7 +50,7 @@ export default function Services() {
       await new Promise((resolve, reject) => {
         const rzp = new window.Razorpay({
           key: rzpKey, amount: rzpOrder.amount, currency: rzpOrder.currency || 'INR',
-          name: 'MotoXpress', description: `Service: ${selectedService.label}`,
+          name: 'Dugdug Wheels', description: `Service: ${selectedService.label}`,
           order_id: rzpOrder.id,
           prefill: { name: user.name, email: user.email, contact: user.phone || '' },
           theme: { color: '#E53935' },

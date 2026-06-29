@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { getMyBookings } from '../api/serviceApi';
 import { getMySellRequests, getMyOrders } from '../api/storeApi';
@@ -50,7 +50,7 @@ export default function MyBookings() {
         key: key || import.meta.env.VITE_RAZORPAY_KEY_ID,
         amount: order.amount,
         currency: order.currency,
-        name: 'MotoXpress Rental',
+        name: 'Dugdug Wheels Rental',
         description: `Balance Payment for ${booking.carSnapshot?.brand} ${booking.carSnapshot?.model}`,
         order_id: order.id,
         prefill: { name: booking.fullName || user.name, email: user.email, contact: booking.contactPhone || user.phone },

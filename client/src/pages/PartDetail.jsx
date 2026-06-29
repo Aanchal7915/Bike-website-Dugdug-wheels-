@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useRef } from 'react';
+﻿import { useState, useEffect, useMemo, useRef } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { getPart, getParts } from '../api/storeApi';
 import { useCart } from '../context/CartContext';
@@ -321,7 +321,7 @@ export default function PartDetail() {
               <h1 style={{ color: '#111', fontFamily: 'Rajdhani, sans-serif', fontSize: '2rem', fontWeight: 900, marginBottom: '0.4rem', lineHeight: 1.1 }}>
                 {part.name}
               </h1>
-              <p style={{ color: '#888', fontSize: '0.95rem', fontWeight: 600, marginBottom: '1.2rem' }}>{part.brand || 'Original MotoXpress Equipment'}</p>
+              <p style={{ color: '#888', fontSize: '0.95rem', fontWeight: 600, marginBottom: '1.2rem' }}>{part.brand || 'Original Dugdug Wheels Equipment'}</p>
 
               {/* Ratings */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '1.5rem', paddingBottom: '1.5rem', borderBottom: '1px solid #EEE' }}>

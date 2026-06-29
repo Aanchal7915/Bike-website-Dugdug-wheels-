@@ -1,4 +1,4 @@
-import { Shield, Clock, MapPin, Star, Zap, Award, Users, CheckCircle, Heart } from 'lucide-react';
+﻿import { Shield, Clock, MapPin, Star, Zap, Award, Users, CheckCircle, Heart } from 'lucide-react';
 
 export default function About() {
   return (
@@ -50,7 +50,7 @@ export default function About() {
             <span style={{ color: '#E53935' }}>BIKE OWNERSHIP</span>
           </h1>
           <p style={{ color: '#999', fontSize: '1.1rem', lineHeight: 1.7, fontWeight: 500 }}>
-            Founded with a passion for engines and a vision for convenience, MotoExpress is India's most trusted platform for buying, selling, and servicing motorcycles. We bridge the gap between quality bikes and passionate riders.
+            Founded with a passion for engines and a vision for convenience, Dugdug Wheels is India's most trusted platform for buying, selling, and servicing motorcycles. We bridge the gap between quality bikes and passionate riders.
           </p>
         </div>
       </section>
@@ -85,7 +85,7 @@ export default function About() {
                 A JOURNEY DRIVEN BY <span style={{ color: '#E53935' }}>EXCELLENCE</span>
               </h2>
               <p style={{ color: '#555', fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                MotoExpress started as a small garage experiment in 2018. Today, we have transformed into a full-stack automotive ecosystem. Whether you're looking for a high-performance superbike or a reliable daily commuter, we ensure a transparent and premium experience.
+                Dugdug Wheels started as a small garage experiment in 2018. Today, we have transformed into a full-stack automotive ecosystem. Whether you're looking for a high-performance superbike or a reliable daily commuter, we ensure a transparent and premium experience.
               </p>
               <div className="journey-subgrid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
                 <div style={{ background: '#FFF', padding: '1.5rem', borderRadius: '16px', border: '1px solid #EEE', boxShadow: '0 4px 15px rgba(0,0,0,0.03)' }}>
@@ -104,7 +104,7 @@ export default function About() {
               <div style={{ position: 'absolute', inset: '-10px', border: '2px solid #E53935', borderRadius: '24px', zIndex: 0 }} />
               <img 
                 src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop" 
-                alt="MotoXpress Workshop" 
+                alt="Dugdug Wheels Workshop" 
                 style={{ width: '100%', height: '100%', borderRadius: '20px', objectFit: 'cover', position: 'relative', zIndex: 1, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} 
               />
             </div>

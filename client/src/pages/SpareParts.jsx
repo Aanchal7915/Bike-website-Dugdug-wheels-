@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { getParts, getPartCategories } from '../api/storeApi';
 import PartCard from '../components/parts/PartCard';
 import { SkeletonCard } from '../components/common/LoadingSpinner';
@@ -71,7 +71,7 @@ export default function SpareParts() {
                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
                  <div style={{ width: 24, height: 3, background: '#E53935', borderRadius: '2px' }} />
                  <span style={{ color: '#E53935', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase' }}>
-                   MotoXpress Store
+                   Dugdug Wheels Store
                  </span>
                </div>
                <h1 style={{ fontFamily: 'Rajdhani, sans-serif', fontSize: 'clamp(1.5rem, 4vw, 3.2rem)', fontWeight: 900, color: '#111', lineHeight: 1, margin: 0 }}>

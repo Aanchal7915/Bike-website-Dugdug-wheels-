@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import { useNavigate, Link } from 'react-router-dom';
@@ -221,7 +221,7 @@ export default function Wishlist() {
         </div>
         <div style={{ textAlign: 'center', maxWidth: '400px' }}>
           <h2 style={{ color: '#111', fontFamily: 'Rajdhani, sans-serif', fontSize: '2.5rem', fontWeight: 900, margin: 0, lineHeight: 1.1 }}>READY TO SAVE <span style={{ color: '#E53935' }}>YOUR FAVORITES?</span></h2>
-          <p style={{ color: '#666', marginTop: '1rem', fontSize: '1.1rem', fontWeight: 500, lineHeight: 1.5 }}>Login to your MotoXpress account to view and manage your personalized wishlist.</p>
+          <p style={{ color: '#666', marginTop: '1rem', fontSize: '1.1rem', fontWeight: 500, lineHeight: 1.5 }}>Login to your Dugdug Wheels account to view and manage your personalized wishlist.</p>
         </div>
         <Link to="/login" style={{ background: '#111', color: 'white', padding: '1.2rem 3rem', borderRadius: '16px', fontWeight: 900, textDecoration: 'none', fontFamily: 'Rajdhani, sans-serif', letterSpacing: '0.15em', fontSize: '1.1rem', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', transition: 'all 0.3s' }}>
           ACCOUNT LOGIN

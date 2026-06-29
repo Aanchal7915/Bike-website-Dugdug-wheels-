@@ -1,4 +1,4 @@
-import { useCart } from '../context/CartContext';
+﻿import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
 import { Trash2, Plus, Minus, ShoppingBag, ArrowLeft, CreditCard, Truck, Shield, ChevronRight, User, Phone, MapPin, X, Check, Home as HomeIcon, Briefcase } from 'lucide-react';
@@ -112,7 +112,7 @@ export default function Cart() {
             key: rzpKey,
             amount: rzpOrder.amount,
             currency: rzpOrder.currency || 'INR',
-            name: 'MotoXpress', description: 'Store Order',
+            name: 'Dugdug Wheels', description: 'Store Order',
             order_id: rzpOrder.id,
             prefill: { name: user.name, email: user.email, contact: user.phone || '' },
             theme: { color: '#E53935' },

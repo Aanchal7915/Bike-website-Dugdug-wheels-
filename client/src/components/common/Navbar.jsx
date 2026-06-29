@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useCart } from '../../context/CartContext';
 import { ShoppingCart, Menu, X, ChevronDown, User, Heart, LogOut, Settings, Wrench, MapPin, Search } from 'lucide-react';
 import API from '../../api/axios';
-import logo from '../../assets/logo.png';
+import Logo from './Logo';
 
 
 
@@ -89,8 +89,8 @@ export default function Navbar() {
     <nav style={{ background: '#111111', borderBottom: '1px solid #1e1e1e' }} className="sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 gap-1 sm:gap-4 lg:gap-8">
-          <Link to="/" className="flex items-center flex-shrink-0" style={{ marginLeft: '-2px' }}>
-            <img src={logo} alt="MotoExpress Logo" style={{ height: '46px', width: 'auto' }} />
+          <Link to="/" className="flex items-center flex-shrink-0" style={{ marginLeft: '-2px', textDecoration: 'none' }}>
+            <Logo height={42} />
           </Link>
 
           {/* Desktop Nav */}

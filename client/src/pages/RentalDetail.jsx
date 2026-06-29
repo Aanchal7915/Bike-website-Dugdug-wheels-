@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+﻿import { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { Calendar, Fuel, Users, Settings, MapPin, Shield, Clock, ArrowLeft, CheckCircle } from 'lucide-react';
@@ -206,7 +206,7 @@ export default function RentalDetail() {
         key: razorpayKey,
         amount: order.amount,
         currency: order.currency,
-        name: 'MotoXpress Rental',
+        name: 'Dugdug Wheels Rental',
         description: `${car.brand} ${car.model} Booking`,
         order_id: order.id,
         handler: async (response) => {
