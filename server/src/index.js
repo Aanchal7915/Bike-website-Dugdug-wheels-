@@ -29,7 +29,7 @@ const app = express();
 app.use(helmet({ crossOriginResourcePolicy: false }));
 app.use(cors({
   origin: (origin, callback) => {
-    const allowed = [process.env.CLIENT_URL, 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'https://motoexpress.avanienterprises.in'].filter(Boolean);
+    const allowed = [process.env.CLIENT_URL, 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'https://motoexpress.avanienterprises.in', 'https://bike-website-dugdug-wheels.vercel.app'].filter(Boolean);
     if (!origin || allowed.includes(origin) || origin.startsWith('http://localhost')) {
       callback(null, true);
     } else {
