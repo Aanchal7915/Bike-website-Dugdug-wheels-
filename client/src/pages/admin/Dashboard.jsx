@@ -1,6 +1,6 @@
-﻿import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../assets/logo.png';
+import Logo from '../../components/common/Logo';
 import { useAuth } from '../../context/AuthContext';
 import API from '../../api/axios';
 import * as adminApi from '../../api/adminApi';
@@ -2894,7 +2894,8 @@ export default function AdminDashboard() {
   const [trackingBookingId, setTrackingBookingId] = useState(null);
 
   useEffect(() => {
-    if (!user || user.role !== 'admin') { navigate('/'); return; }
+    if (!user) { navigate('/login'); return; }
+    if (user.role !== 'admin') { navigate('/'); return; }
     API.get('/admin/stats').then(({ data }) => setStats(data.stats));
     API.get('/services?limit=5').then(({ data }) => setRecentServices(data.bookings || []));
   }, []);
@@ -2957,8 +2958,8 @@ export default function AdminDashboard() {
       `}</style>
       {/* Mobile top bar */}
       <div className="admin-mobile-topbar" style={{ display: 'none', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 60, background: '#111', borderBottom: '1px solid #2A2A2A', padding: '0.7rem 1rem', alignItems: 'center', justifyContent: 'space-between' }}>
-        <div style={{ display: 'flex', alignItems: 'center', overflow: 'hidden', width: '120px' }}>
-          <img src={logo} alt="Dugdug Wheels Logo" style={{ height: '24px', width: 'auto', transform: 'scale(4)', transformOrigin: 'left center', mixBlendMode: 'screen' }} />
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <Logo height={30} />
         </div>
         <button onClick={() => setSidebarOpen(!sidebarOpen)} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer', padding: '0.3rem' }}>
           {sidebarOpen ? <X size={24} /> : <Menu size={24} />}
@@ -2969,8 +2970,8 @@ export default function AdminDashboard() {
       {/* Sidebar */}
       <div className={`admin-sidebar${sidebarOpen ? ' open' : ''}`} style={{ width: 280, background: '#111', borderRight: '1px solid #2A2A2A', display: 'flex', flexDirection: 'column', flexShrink: 0 }}>
         <div style={{ padding: '2rem 1.5rem', borderBottom: '1px solid #2A2A2A' }}>
-          <div style={{ display: 'flex', alignItems: 'center', overflow: 'hidden', width: '180px', height: '40px' }}>
-            <img src={logo} alt="Dugdug Wheels Logo" style={{ height: '30px', width: 'auto', transform: 'scale(5)', transformOrigin: 'left center', mixBlendMode: 'screen' }} />
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <Logo height={38} />
           </div>
           <div style={{ color: '#555', fontSize: '0.8rem', marginTop: '0.4rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em' }}>ADMIN PORTAL</div>
         </div>
