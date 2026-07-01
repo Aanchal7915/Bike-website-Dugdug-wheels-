@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
 import Logo from './Logo';
@@ -15,8 +15,13 @@ export default function Footer() {
             </div>
             <p style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>The ultimate destination for premium bike enthusiasts. Buy, sell, and service elite machines with India's most trusted automotive platform.</p>
             <div className="flex items-center gap-3 mt-4">
-              {[FaFacebook, FaInstagram, FaYoutube, FaTwitter].map((Icon, i) => (
-                <a key={i} href="#" style={{ width: 36, height: 36, borderRadius: '8px', background: '#1A1A1A', border: '1px solid #2A2A2A', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#888', transition: 'all 0.2s' }}
+              {[
+                { Icon: FaFacebook, href: '#' },
+                { Icon: FaInstagram, href: 'https://www.instagram.com/dug.dug.wheels?igsh=MWZlemVxdXljM3l4Mw==' },
+                { Icon: FaYoutube, href: '#' },
+                { Icon: FaTwitter, href: '#' }
+              ].map(({ Icon, href }, i) => (
+                <a key={i} href={href} target={href !== '#' ? '_blank' : undefined} rel={href !== '#' ? 'noopener noreferrer' : undefined} style={{ width: 36, height: 36, borderRadius: '8px', background: '#1A1A1A', border: '1px solid #2A2A2A', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#888', transition: 'all 0.2s' }}
                   onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#E53935'; e.currentTarget.style.color = '#E53935'; }}
                   onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#2A2A2A'; e.currentTarget.style.color = '#888'; }}>
                   <Icon size={16} />
