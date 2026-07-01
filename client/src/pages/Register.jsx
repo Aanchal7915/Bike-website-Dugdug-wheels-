@@ -25,12 +25,12 @@ export default function Register() {
   return (
     <div style={{ height: '100vh', background: '#F9F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.5rem', overflow: 'hidden' }}>
       <div style={{ width: '100%', maxWidth: 420 }}>
-        <div style={{ textAlign: 'center', marginBottom: '0.6rem', background: '#111', borderRadius: '24px', padding: '1.5rem', boxShadow: '0 8px 30px rgba(0,0,0,0.1)' }}>
-          <Link to="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: '#111', width: '80px', height: '80px', borderRadius: '50%', margin: '0 auto 1rem', border: '3px solid #E53935', boxShadow: '0 4px 15px rgba(229,57,53,0.2)' }}>
+        <div style={{ textAlign: 'center', marginBottom: '0.8rem' }}>
+          <Link to="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem' }}>
             <LogoIcon size={52} />
           </Link>
-          <h1 style={{ color: '#FFF', fontSize: '1.4rem', fontWeight: 900, marginTop: '0.2rem', fontFamily: 'Rajdhani, sans-serif' }}>Create Account</h1>
-          <p style={{ color: '#AAA', marginTop: '0.1rem', fontSize: '0.82rem' }}>Join India's fastest bike platform</p>
+          <h1 style={{ color: '#111', fontSize: '1.4rem', fontWeight: 900, marginTop: '0.2rem', fontFamily: 'Rajdhani, sans-serif' }}>Create Account</h1>
+          <p style={{ color: '#666', marginTop: '0.1rem', fontSize: '0.82rem' }}>Join India's fastest bike platform</p>
         </div>
  
         <div style={{ background: '#FFF', border: '1px solid #EEE', borderRadius: '16px', padding: '1.4rem', boxShadow: '0 8px 30px rgba(0,0,0,0.05)' }}>
