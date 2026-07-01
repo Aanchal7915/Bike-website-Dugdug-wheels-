@@ -42,7 +42,7 @@ export default function Login() {
       <div style={{ width: '100%', maxWidth: 400 }}>
         {/* Logo */}
         <div style={{ textAlign: 'center', marginBottom: '0.8rem' }}>
-          <Link to="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem' }}>
+          <Link to="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: '#111', width: '80px', height: '80px', borderRadius: '50%', margin: '0 auto 1rem', border: '3px solid #E53935', boxShadow: '0 4px 15px rgba(229,57,53,0.2)' }}>
             <LogoIcon size={52} />
           </Link>
           <h1 style={{ color: '#111', fontSize: '1.4rem', fontWeight: 900, marginTop: '0.2rem', fontFamily: 'Rajdhani, sans-serif' }}>Welcome Back</h1>
